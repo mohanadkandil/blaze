@@ -1,7 +1,7 @@
-import { MdOutlineEdit, MdOutlineCloudUpload, MdImageSearch, IoShapesOutline } from 'react-icons/all'
 import { Tab } from '@headlessui/react'
+import { IconType } from 'react-icons'
+import leftBarTabs from '../data/leftBarTabs'
 export const LeftBar = () => {
-
     return (
         <Tab.Group>
         <div className='w-full h-screen bg-[#f3f8fe] flex'>
@@ -10,30 +10,16 @@ export const LeftBar = () => {
                 <div className="flex flex-col items-center">
                     <div className='flex flex-col items-center'>
                         <Tab.List className='flex flex-col items-center'>
-                            <Tab className='flex flex-col items-center py-5'>
-                                <div className='text-white text-2xl'>
-                                    <MdOutlineEdit />
-                                </div>
-                                <p className='text-slate-200'>Home</p>
-                            </Tab>
-                            <Tab className='flex flex-col items-center py-5'>
-                                <div className='text-white text-2xl'>
-                                    <IoShapesOutline />
-                                </div>
-                                <p className='text-slate-200'>Elements</p>
-                            </Tab>
-                            <Tab className='flex flex-col items-center py-5'>
-                                <div className='text-white text-2xl'>
-                                    <MdImageSearch />
-                                </div>
-                                <p className='text-slate-200'>Images</p>
-                            </Tab>
-                            <Tab className='flex flex-col items-center py-5'>
-                                <div className='text-white text-2xl'>
-                                    <MdOutlineCloudUpload />
-                                </div>
-                                <p className='text-slate-200'>Upload</p>
-                            </Tab>
+                            {
+                                leftBarTabs.map((tab) => (
+                                    <Tab className='flex flex-col items-center py-5'>
+                                        <div className='text-white text-2xl'>
+                                            {tab.tabIcon}
+                                        </div>
+                                        <p className='text-slate-200'>{tab.tabName}</p>
+                                    </Tab>
+                                ))
+                            }
                         </Tab.List>
                     </div>
                 </div>
