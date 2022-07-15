@@ -2,7 +2,7 @@ import { MdOutlineEdit, MdOutlineCloudUpload, MdImageSearch, IoShapesOutline } f
 
 type IconProps = {
     tabName: string,
-    tabIcon: any,
+    tabIcon: React.ReactNode,
 }
 
 const leftBarTabs: IconProps[] = [

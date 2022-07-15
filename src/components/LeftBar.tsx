@@ -9,10 +9,10 @@ export const LeftBar = () => {
             <div className='pt-10'>
                 <div className="flex flex-col items-center">
                     <div className='flex flex-col items-center'>
-                        <Tab.List className='flex flex-col items-center'>
+                        <Tab.List className='flex flex-col items-center border-none'>
                             {
                                 leftBarTabs.map((tab) => (
-                                    <Tab className='flex flex-col items-center py-5'>
+                                    <Tab className='flex flex-col items-center py-5 outline-none'>
                                         <div className='text-white text-2xl'>
                                             {tab.tabIcon}
                                         </div>
