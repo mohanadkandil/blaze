@@ -1,9 +1,11 @@
-import { LeftBar } from "./components/LeftBar"
+import { LeftBar } from "./components/LeftBar";
 
 function App() {
   return (
-    <LeftBar />
-  )
+    <div className="font-poppins">
+      <LeftBar />
+    </div>
+  );
 }
 
-export default App
+export default App;
