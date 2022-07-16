@@ -1,10 +1,10 @@
 import { Tab } from "@headlessui/react";
 import leftBarTabs from "../data/leftBarTabs";
-import { Home } from "./Home";
+import { TitleTab } from "./TitleTab";
 export const LeftBar = () => {
   return (
     <Tab.Group>
-      <div className="w-full h-screen bg-[#f3f8fe] flex">
+      <div className="h-screen flex">
         <div className="h-screen w-24 bg-[#7F5EE3]">
           <div className="pt-10">
             <div className="flex flex-col items-center">
@@ -24,7 +24,7 @@ export const LeftBar = () => {
         <div>
           <Tab.Panels>
             <Tab.Panel>
-              <Home />
+              <TitleTab />
             </Tab.Panel>
             <Tab.Panel>Elements</Tab.Panel>
             <Tab.Panel>Images</Tab.Panel>

@@ -10,7 +10,8 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-export const Home = () => {
+import { EditorArea } from "./EditorArea";
+export const TitleTab = () => {
   const FONTWEIGHTS = [
     "100",
     "200",
